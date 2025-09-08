@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="A simple HTML document">
+    <meta author="Jesus Claus Kagubare">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="images/user.svg" alt="logo" id="logo" width="100" height="100">
+        <span>Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="personal-info">
+            <div class="info">
+                <h2>About me</h2>
+                <div class="info_content">
+                    <p>Hello, I am Jesus Claus Kagubare, a student at BYU Pathway Worldwide. I am currently pursuing a degree in Software Development. I have a passion for technology and programming, and I enjoy learning new skills in this field. In my free time, I like to read books, watch movies, and exercise. I also enjoy spending time with my family and friends.</p>
+                </div>
+            </div>
+            <div class="info2">
+                <h2>Student Photo</h2>
+                <div class="info2_content">
+                    <img src="images/passport picture 1b.jpg" alt="Student Photo">
+                </div>
+            </div>
+        </section>
+         <section id="courseContainer" class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div>
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses">
+                <!-- Course items will be dynamically inserted here -->
+            </div>
+        </section>
+        <p>Total credits for courses listed above: <span id="totalCredits"></span></p>
+    </main>
+    <footer>
+        <img src="images/linked_in.svg" alt="linked_in" width="30" height="30">
+        <img src="images/github_icon.svg" alt="github" width="30" height="30">
+        <img src="images/instagram logo_icon.svg" alt="instagram" width="30" height="30">
+        <p>&copy; <span id="currentyear"></span>🎈Jesus Claus Kagubare🎈Rwanda</p>
+        <p><span id="lastModified">Last Modified:</span></p>
+    </footer>
+</body>
+</html>
