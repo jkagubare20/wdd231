@@ -246,10 +246,20 @@ footer {
     color: black;
 }
 
+footer a img {
+    margin: 0 10px;
+    vertical-align: middle;
+}
 
 
 @media only screen and (max-width: 400px) {
     .personal-info {
         grid-template-columns: 1fr;
     }
+
+    .navigation {
+        display:none;
+        background-color: var(--secondary-color);
+    }
+
 }
