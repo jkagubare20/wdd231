@@ -41,7 +41,7 @@ header {
     grid-template-columns:  44px auto 44px;
     align-items: center;
     padding: 5px 10px 5px 10px;
-    
+    border-bottom: solid 1px white;
     column-gap: 8px;
     text-align: center;
 }
@@ -101,7 +101,7 @@ header span {
     color: black;
 }
 
-.navigation li.current {
+.navigation li.index {
     background-color: var(--primary-color);
 }
 
