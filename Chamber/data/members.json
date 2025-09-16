@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+        "name": "Alice's Adventures",
+        "address": "123 Wonderland Ave, Imagination City, IL 60601",
+        "phone": "(555) 123-4567",
+        "website": "http://www.alicesadventures.com",
+        "membershipLevel": "Gold",
+        "imageFileName": "travel.webp",
+        "description": "A whimsical shop offering unique gifts and curiosities."
+        },
+        {
+        "name": "Bob's Burgers",
+        "address": "456 Burger Lane, Foodie Town, TX 75001",
+        "phone": "(555) 987-6543",
+        "website": "http://www.bobsburgers.com",    
+        "membershipLevel": "Silver",
+        "imageFileName": "burger.webp",
+        "description": "Home of the best burgers in town, with a family-friendly atmosphere."
+        },
+        {
+        "name": "Charlie's Chocolates",
+        "address": "789 Sweet St, Candy City, CA 90210",
+        "phone": "(555) 555-5555",
+        "website": "http://www.charlieschocolates.com",
+        "membershipLevel": "Bronze",
+        "imageFileName": "chocolate.png",
+        "description": "Handcrafted chocolates and confections made with love."
+        },
+        {
+        "name": "Daisy's Diner",
+        "address": "321 Breakfast Blvd, Morningtown, FL 33101",
+        "phone": "(555) 111-2222",
+        "website": "http://www.daisysdiner.com",
+        "membershipLevel": "Gold",
+        "imageFileName": "diner.webp",
+        "description": "A classic diner serving breakfast all day long."
+        },
+        {
+        "name": "Eve's Electronics",
+        "address": "654 Tech Terrace, Silicon Valley, CA 94025",
+        "phone": "(555) 333-4444",
+        "website": "http://www.eveselectronics.com",
+        "membershipLevel": "Silver",
+        "imageFileName": "electronics.webp",
+        "description": "Your one-stop shop for the latest gadgets and electronics."
+        },
+        {
+        "name": "Frank's Fitness",
+        "address": "987 Workout Way, Muscle City, NY 10001",
+        "phone": "(555) 666-7777",
+        "website": "http://www.franksfitness.com",
+        "membershipLevel": "Bronze",
+        "imageFileName": "fitness.jpg",
+        "description": "A state-of-the-art gym with personal training and group classes."
+        },
+        {
+        "name": "Grace's Garden Center",
+        "address": "159 Green Thumb Rd, Plantville, OR 97035",
+        "phone": "(555) 888-9999",
+        "website": "http://www.gracesgardencenter.com",
+        "membershipLevel": "Gold",
+        "imageFileName": "garden.jpg",
+        "description": "A beautiful garden center with plants, flowers, and gardening supplies."
+        }
+    ]
+}
