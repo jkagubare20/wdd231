@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of commerce home page">
+    <meta name="author" content="Jesus Claus Kagubare">
+    <meta property="og:title" content="Chamber of Commerce Home Page">
+    <meta property="og:description" content="Chamber of Commerce Home Page">
+    <meta property="og:image" content="images/passport picture 1b.jpg">
+    <meta property="og:url" content="https://github.com/jkagubare20/wdd231.git">
+    <title>Chamber of Commerce Directory Page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/comment-dollar.svg" alt="logo" id="logo">
+        <span>Timbuktu Chamber of Commerce</span>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Events</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <main>
+        <h1>Chamber of Commerce</h1>
+        <div class="hero">
+            <img src="images/warehouse.webp" alt="warehouse" id="hero-image">
+        </div>
+        <a href="#" class="btn">Join Now</a>
+        <div class="content-grid">
+            <section id="current-events" class="events">
+                <h2>Current Events</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis deserunt enim consectetur, animi impedit dignissimos labore assumenda, voluptate, in maiores molestias delectus reprehenderit sapiente. Dignissimos porro praesentium odio sint quod!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quia sunt illo itaque deleniti. Suscipit quisquam alias atque repudiandae laborum animi inventore laudantium, blanditiis odit tenetur deserunt eos eum culpa!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus suscipit dolorem iure possimus voluptas nobis eveniet tempore pariatur, iste quas consequatur in ipsum vitae debitis, officiis, omnis placeat aperiam.</p>
+                <a href="#" class="btn2">See All Events</a>
+            </section>
+
+            <section id="weather" class="weather">
+                <h2>Weather</h2>
+                <div id="weather-container">   
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                    <p id="forecast-1"></p>
+                    <p id="forecast-2"></p>
+                    <p id="forecast-3"></p>
+                </div>
+            </section>
+        </div>
+        <section id="spotlight" class="spotlight">
+            <h2>Spotlight</h2>
+            <div class="spotlight-container">
+                <!-- Spotlight cards will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Timbuktu Chamber of Commerce</h2>
+        <p>Address</p>
+        <p>Email</p>
+        <p>Phone Number</p>
+        <div class="socials">
+            <a href="https://linkedin.com">
+                <img src="images/linked_in.svg" alt="linked_in" width="30" height="30">
+            </a>
+            <a href="https://www.github.com">
+                <img src="images/github_icon.svg" alt="github" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram logo_icon.svg" alt="instagram" width="30" height="30">
+            </a>  
+        </div>
+        <p>WDD231 Class Project</p>
+        <p>&copy; <span id="currentyear"></span>🎈Jesus Claus Kagubare🎈Rwanda</p>
+        <p><span id="lastModified">Last Modified:</span></p>
+    </footer>
+</body>
+</html>
