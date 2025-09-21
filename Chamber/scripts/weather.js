@@ -41,10 +41,9 @@ function displayCurrentWeather(data) {
     const myTemperature = document.getElementById('temperature');
     const myDescription = document.getElementById('description');
     
-    if (myTemperature && myDescription) {
+     if (myTemperature && myDescription) {
         myTemperature.textContent = `Current Temperature: ${data.main.temp.toFixed(0)}°F`;
-        myDescription.textContent` Current Description: ${data.weather[0].description}`;
-        
+        myDescription.textContent = `Current Conditions: ${data.weather[0].description}`;
     }
 }
 
