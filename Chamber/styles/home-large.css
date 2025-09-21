@@ -76,13 +76,12 @@
     }
 
     .spotlight-container {
-        display: flex;
-        justify-content: center;
+        display: flex ;
         gap: 20px;
     }
 
     .info-card {
-        width: 30%;
+        align-items: center;
         height: 100%;
         background: var(--white);
         border-radius: var(--border-radius);
