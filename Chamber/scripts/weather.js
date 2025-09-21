@@ -1,5 +1,3 @@
-// weather.js - Weather functionality module
-
 const myKey = '159ed3d09064b78f7c64f0de2b675559';
 const myLong = '30.09244463897517'; 
 const myLat = '-1.9535257720178318';
@@ -44,7 +42,8 @@ function displayCurrentWeather(data) {
     const myDescription = document.getElementById('description');
     
     if (myTemperature && myDescription) {
-        myTemperature.textContent = `Current Temperature: ${data.main.temp.toFixed(0)}°F - ${data.weather[0].description}`;
+        myTemperature.textContent = `Current Temperature: ${data.main.temp.toFixed(0)}°F`;
+        myDescription.textContent` Current Description: ${data.weather[0].description}`;
         
     }
 }
