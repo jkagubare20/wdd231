@@ -1,0 +1,77 @@
+@media only screen and (min-width: 600px) {
+    /* Header adjustments for large screens */
+    header {
+        grid-template-columns: auto 1fr auto;
+        padding: 1rem 2rem;
+        position: relative;
+    }
+
+    header span {
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    /* Hide hamburger menu on large screens */
+    header .hamburger {
+        display: none;
+    }
+
+    /* Show navigation on large screens - override mobile styles */
+    header .navigation {
+        display: flex;
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        gap: 1rem;
+    }
+
+    /* Make sure navigation shows even without .show class on large screens */
+    header .navigation.show {
+        display: flex;
+    }
+
+    header .navigation a {
+        display: block;
+        padding: 0.5rem;
+        border-radius: 20px;
+        border-bottom: none;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    header .navigation a:hover {
+        background: var(--accent-color);
+    }
+
+    main {
+        padding: 0 2rem;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    footer {
+        padding: 3rem 2rem;
+    }
+
+    footer h2 {
+        font-size: 2.2rem;
+    }
+
+    .socials {
+        gap: 1.5rem;
+    }
+
+    .socials a {
+        padding: 1rem;
+    }
+
+    .socials img {
+        width: 40px;
+        height: 40px;
+    }
+}

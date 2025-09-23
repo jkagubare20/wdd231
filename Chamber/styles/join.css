@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #1b3d1f;  /* Darker for better contrast */
+    --secondary-color: #2e7d32; /* Darker green for better contrast */
+    --accent-color: #e65100;    /* Darker orange for better contrast */
+    --background-color: #f5f5f5;
+    --text-color: #212121;      /* Darker text for better contrast */
+    --white: #fff;
+    --font-family: 'Arial', sans-serif;
+    --border-radius: 8px;
+    --light-green: #4CAF50;     /* Keep lighter green for backgrounds */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    padding: 8px;
+}
+
+header span {
+    font-size: 1.8rem;
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow for better contrast */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    background: var(--white);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--border-radius);
+}
+
+.hamburger::after {
+    content: "\2630"; 
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.hamburger.show::after {
+    content: "\2715"; 
+    color: var(--primary-color);
+}
+
+/* Navigation - Hidden by default on mobile */
+.navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--primary-color); /* Changed to darker color for better contrast */
+    z-index: 1000;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.1rem; /* Slightly larger for better readability */
+}
+
+.navigation a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+footer {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.socials {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials a {
+    display: inline-block;
+    padding: 0.5rem;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
