@@ -45,13 +45,36 @@
         background: var(--accent-color);
     }
 
-    main {
-        padding: 0 2rem;
-    }
-
     main h1 {
         font-size: 3rem;
         margin-bottom: 2.5rem;
+    }
+
+    main {
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+    
+    .form-section {
+        grid-column: 1;
+    }
+    
+    .membership-section {
+        grid-column: 2;
+        margin-top: 1rem ;
+    }
+    
+    main h1:first-of-type {
+        grid-column: 1 / -1;
+        margin-bottom: 1rem;
+    }
+    
+    .membership-cards-container {
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
     }
 
     footer {
@@ -73,5 +96,22 @@
     .socials img {
         width: 40px;
         height: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .membership-level {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        align-items: start;
+    }
+    
+    .membership-card {
+        padding: 1.5rem;
+    }
+    
+    form {
+        padding: 2.5rem;
     }
 }

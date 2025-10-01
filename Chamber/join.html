@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/join-large.css">
     <link rel="stylesheet" href="styles/join.css">
-    <script type="module" src="scripts/join.js"></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,12 +27,89 @@
             <a href="join.html">Join</a>
             <a href="#">Discover</a>
         </nav>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger"></button>
     </header>
     <main>
-        <form action="" get="">
+        <div class="form-section">
+            <h1>Membership Application Form</h1>
+            <form action="thankyou.html" method="GET" id="application-form">
+                <label for="firstname">First Name<code>*</code>:</label>
+                <input type="text" name="fname" title="fname" autocomplete="given-name" id="firstname" required>
 
-        </form>
+                <label for="lastname">Last Name<code>*</code>:</label>
+                <input type="text" name="lname" title="lname" autocomplete="family-name" id="lastname" required>
+
+                <label for="organizational-title">Organizational Title:</label>
+                <input type="text" id="organizational-title" name="organizational-title" title="organizational-title" autocomplete="organization-title">
+
+                <label for="email">Email Address<code>*</code>:</label>
+                <input type="email" id="email" name="email" title="email" autocomplete="email" required>
+
+                <label for="telephone">Phone Number<code>*</code>:</label>
+                <input type="tel" name="phone" title="phone" autocomplete="tel" id="telephone" required>
+
+                <label for="business-name">Business Name<code>*</code>:</label>
+                <input type="text" id="business-name" name="business-name" title="business-name" autocomplete="organization" required>
+
+                <label>Membership Level:</label>
+                <div id="membership" class="membership-level">
+                    <label><input type="radio" name="membership" value="np">NP Membership (Non-Profit)</label>
+                    <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                </div>
+
+                <label for="organization-description">Business Description:</label>
+                <textarea id="organization-description" name="organization-description" title="organization-description" rows="6" placeholder="Write your business description here..."></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application" id="submit">
+            </form>
+        </div>
+        <div class="membership-section">
+            <h1>Membership Levels</h1>
+            <div class="membership-cards-container">
+                <div class="membership-card">
+                    <p>Non-Profit Membership Level</p>
+                    <button class="openButton" data-dialog="np-card">Learn More</button>
+                    <dialog id="np-card">
+                        <h2>Non-profit Membership</h2>
+                        <p>NP Membership is for non-profit organizations and there is no fee.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="membership-card">
+                    <p>Bronze Membership Level</p>
+                    <button class="openButton" data-dialog="bronze-card">Learn More</button>
+                    <dialog id="bronze-card">
+                        <h2>Bronze Membership</h2>
+                        <p>The level with the lowest fees but the lowest access to top tier services as well.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="membership-card">
+                    <p>Silver Membership Level</p>
+                    <button class="openButton" data-dialog="silver-card">Learn More</button>
+                    <dialog id="silver-card">
+                        <h2>Silver Membership</h2>
+                        <p>This level has more access and more benefits.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="membership-card">
+                    <p>Gold Membership Level</p>
+                    <button class="openButton" data-dialog="gold-card">Learn More</button>
+                    <dialog id="gold-card">
+                        <h2>Gold Membership</h2>
+                        <p>This level has infinite access and benefits as long as membership is still valid.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <h2>Timbuktu Chamber of Commerce</h2>
