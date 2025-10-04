@@ -1,0 +1,74 @@
+{
+    "places": [
+        {
+          "name": "Kigali Genocide Memorial",
+          "address": "KG 14 Ave, Kigali, Rwanda",
+          "cost": "Free (donations encouraged)",
+          "description": "A moving memorial and museum honoring victims of the 1994 genocide, featuring exhibits, archives, and peaceful gardens.",
+          "photo": "kigali_genocide_memorial.webp"
+        },
+        {
+          "name": "Nyamirambo Women’s Center Walking Tour",
+          "address": "KN 90 St, Kigali, Rwanda",
+          "cost": "Around $20 per person",
+          "description": "Guided walking tour through Nyamirambo, Kigali’s oldest neighborhood, showcasing markets, local food, culture, and daily life.",
+          "photo": "nyamirambo-women-s-center walk.webp"
+        },
+        {
+          "name": "Kandt House Museum",
+          "address": "KN 90 St, Kigali, Rwanda",
+          "cost": "Approx. $6 for foreigners, $1 for locals",
+          "description": "Former residence of German explorer Richard Kandt, featuring Rwanda’s colonial history, natural history exhibits, and live reptiles.",
+          "photo": "Kings-Palace-Nyanza.webp"
+        },
+        {
+          "name": "Mount Kigali Hike",
+          "address": "Nyamirambo area, Kigali, Rwanda",
+          "cost": "Free (guided hikes around $15–20)",
+          "description": "A scenic hike offering panoramic views of Kigali city and surrounding countryside, popular with locals and visitors alike.",
+          "photo": "Mount-Kigali.webp"
+        },
+        {
+          "name": "Kimironko Market",
+          "address": "KG 11 Ave, Kigali, Rwanda",
+          "cost": "Free entry (shopping prices vary)",
+          "description": "Bustling local market known for fabrics, crafts, produce, and fresh food stalls. A lively experience of Kigali’s daily life.",
+          "photo": "kimironk0_market.webp"
+        },
+        {
+          "name": "Inema Arts Center",
+          "address": "KG 563 St, Kigali, Rwanda",
+          "cost": "Free entry (artworks for sale)",
+          "description": "One of East Africa’s biggest contemporary art galleries, showcasing paintings, sculptures, and performances by Rwandan artists.",
+          "photo": "inema_art_center.webp"
+        },
+        {
+          "name": "Kigali Convention Centre",
+          "address": "KG 2 Roundabout, Kigali, Rwanda",
+          "cost": "Free to view (restaurants, events priced separately)",
+          "description": "Iconic dome-shaped landmark and event space, beautifully lit at night, with restaurants and Kigali Heights nearby.",
+          "photo": "The-Radisson-Blu-Hotel-Convention-Center.webp"
+        },
+        {
+          "name": "Kigali Nightlife & Live Music",
+          "address": "Kiyovu & Kimihurura areas, Kigali, Rwanda",
+          "cost": "Varies by bar/club (typically $5–15)",
+          "description": "Vibrant nightlife scene with rooftop bars, lounges, live music, and traditional dance performances.",
+          "photo": "Kigali-night-life.webp"
+        },
+        {
+          "name": "Question Coffee Café",
+          "address": "KN 3 Ave, Kigali, Rwanda",
+          "cost": "Coffee from $2, tours $15–30",
+          "description": "Specialty café serving Rwanda’s finest coffee, with workshops and tastings to learn about Rwanda’s coffee culture.",
+          "photo": "Question-Coffee.webp"
+        },
+        {
+          "name": "Fazenda Sengha (Horseback Riding & Outdoor Activities)",
+          "address": "Mount Kigali, Nyamirambo, Kigali, Rwanda",
+          "cost": "Activities $10–50 depending on choice",
+          "description": "Outdoor recreation center offering horseback riding, zip-lining, archery, and picnics with great views of Kigali.",
+          "photo": "fazenda.webp"
+        }
+    ]
+}
