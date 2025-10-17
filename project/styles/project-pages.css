@@ -1,0 +1,359 @@
+
+/* ABOUT PAGE STYLE */
+
+.about-hero {
+    background: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.about-section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h3 {
+    color: #2c5aa0;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.about-section p {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Values Section */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #2c5aa0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.2);
+}
+
+.value-card h4 {
+    color: #2c5aa0;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: black;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Impact Stats */
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background:  #1e3a5f;
+    color: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fb923c;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+/* DONATE PAGE STYLE */
+
+.form-section {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.form-section h1 {
+    color: #2c5aa0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+#application-form {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+#application-form label {
+    display: block;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#application-form code {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#application-form input[type="text"],
+#application-form input[type="email"],
+#application-form input[type="tel"] {
+    width: 100%;
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+#application-form input[type="text"]:focus,
+#application-form input[type="email"]:focus,
+#application-form input[type="tel"]:focus {
+    outline: none;
+    border-color: #2c5aa0;
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+}
+
+.donation-categories {
+    margin: 1.5rem 0 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.donation-categories label {
+    display: block;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.donation-categories label:hover {
+    border-color: #2c5aa0;
+    background: #f0f4f8;
+}
+
+.donation-categories input[type="radio"] {
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+
+#submit {
+    width: 100%;
+    padding: 1.2rem;
+    background: linear-gradient(135deg, #2c5aa0 0%, #1e3a5f 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Outfit', sans-serif;
+}
+
+#submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+}
+
+/* Donation Categories Section */
+.donation-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem 4rem;
+}
+
+.donation-section h1 {
+    color: #2c5aa0;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.donation-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.donation-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(44, 90, 160, 0.2);
+}
+
+.donation-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c5aa0;
+    margin-bottom: 1.5rem;
+}
+
+.openButton {
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, #2c5aa0 0%, #1e3a5f 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Outfit', sans-serif;
+}
+
+.openButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+}
+
+/* Dialog Styles */
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+dialog h2 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+dialog p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.closeButton {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+}
+
+.closeButton:hover {
+    background: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .about-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .about-hero p {
+        font-size: 1rem;
+    }
+    
+    .about-section {
+        padding: 1.5rem;
+    }
+    
+    .about-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .values-grid,
+    .impact-stats,
+    .donation-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #application-form {
+        padding: 2rem 1.5rem;
+    }
+    
+    .form-section h1,
+    .donation-section h1 {
+        font-size: 2rem;
+    }
+}

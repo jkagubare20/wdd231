@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ubumwe Donations - Making a difference together">
+    <meta name="author" content="Jesus Claus Kagubare">
+    <meta property="og:title" content="Ubumwe Donations - Unite for Change">    
+    <meta property="og:description" content="Join us in transforming lives through community support and sustainable development initiatives across Rwanda.">
+    <meta property="og:image" content="images/passport picture 1b.jpg">
+    <meta property="og:url" content="https://jkagubare20.github.io/wdd231/project.html">
+    <title>Ubumwe Donations - Unite for Change</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script type="module" src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ubumwe Donations</h1>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html" class="active">Donate</a></li>
+        </ul>   
+    </nav>     
+
+    <main>
+        <div class="form-section">
+            <h1>Donation Form</h1>
+            <form action="thankyou.html" method="GET" id="application-form">
+                <label for="firstname">First Name<code>*</code>:</label>
+                <input type="text" name="fname" title="fname" autocomplete="given-name" id="firstname" required>
+
+                <label for="lastname">Last Name<code>*</code>:</label>
+                <input type="text" name="lname" title="lname" autocomplete="family-name" id="lastname" required>
+
+                <label for="email">Email Address<code>*</code>:</label>
+                <input type="email" id="email" name="email" title="email" autocomplete="email" required>
+
+                <label for="telephone">Phone Number<code>*</code>:</label>
+                <input type="tel" name="phone" title="phone" autocomplete="tel" id="telephone" required>
+
+                <label>Donation Categories:</label>
+                <div id="membership" class="donation-categories">
+                    <label><input type="radio" name="membership" value="np">Children & Youth</label>
+                    <label><input type="radio" name="membership" value="bronze">Health & Disease</label>
+                    <label><input type="radio" name="membership" value="silver">Disaster Relief</label>
+                    <label><input type="radio" name="membership" value="gold">Hunger & Poverty</label>
+                </div>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application" id="submit">
+            </form>
+        </div>
+        <div class="donation-section">
+            <h1>Donation Categories</h1>
+            <div class="donation-container">
+                <div class="donation-card">
+                    <p>Children & Youth</p>
+                    <button class="openButton" data-dialog="np-card">Learn More</button>
+                    <dialog id="np-card">
+                        <h2>Children & Youth</h2>
+                        <p>Organisations focused on the welfare of children and young people.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="donation-card">
+                    <p>Health & Disease</p>
+                    <button class="openButton" data-dialog="bronze-card">Learn More</button>
+                    <dialog id="bronze-card">
+                        <h2>Health & Disease</h2>
+                        <p>Charities working in healthcare and medical research.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="donation-card">
+                    <p>Disaster Relief</p>
+                    <button class="openButton" data-dialog="silver-card">Learn More</button>
+                    <dialog id="silver-card">
+                        <h2>Disaster Relief</h2>
+                        <p>Organizations that provide aid during natural disasters.</p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+
+                <div class="donation-card">
+                    <p>Hunger & Poverty</p>
+                    <button class="openButton" data-dialog="gold-card">Learn More</button>
+                    <dialog id="gold-card">
+                        <h2>Hunger & Poverty</h2>
+                        <p>Organizations that address food insecurity and poverty. </p>
+                        <button class="closeButton">❌</button>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Ubumwe Donations</h2>
+        <p>ubumwe@gmail.com</p>
+        <p>+250 788 000 000 </p>
+        <div class="socials">
+            <a href="https://linkedin.com">
+                <img src="images/linked_in.svg" alt="linked_in" width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="images/facebook_logo_icon.svg" alt="facebook" width="30" height="30">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/instagram_logo_icon.svg" alt="instagram" width="30" height="30">
+            </a>  
+        </div>
+        <p>WDD231 Project</p>
+        <p>&copy; <span id="currentyear"></span>🎈Jesus Claus Kagubare🎈Rwanda</p>
+        <p><span id="lastModified">Last Modified:</span></p>
+    </footer>
+</body>
