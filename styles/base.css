@@ -143,13 +143,14 @@ h1 {
     background: white;
     border: 3px solid black;
     padding: 1rem;
+    justify-content: center;
+    max-width: fit-content;
 }
 
 .info2_content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
 }
 
 .info h2 {
@@ -204,6 +205,13 @@ h1 {
     color: black;
 }
 
+h2 {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+    
+
 .courses button {
     display: inline-block; /* Change from block to inline-block */
     width: auto; /* Change from 100% to auto */
@@ -253,7 +261,7 @@ footer a img {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .personal-info {
         grid-template-columns: 1fr;
     }
