@@ -29,11 +29,6 @@ main h1 {
     margin-bottom: 20px;
 }
 
-header span {
-    color: black;
-
-
-}
 
 header {
     background-color: var(--primary-color);
