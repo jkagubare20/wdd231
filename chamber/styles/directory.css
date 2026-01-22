@@ -292,7 +292,7 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 748px) {
     main h1 {
         font-size: 2rem;
     }
