@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of commerce join page">
+    <meta name="description" content="Chamber of commerce join page for local businesses in Timbuktu">
     <meta name="author" content="Jesus Claus Kagubare">
     <meta property="og:title" content="Chamber of Commerce Join Page">
-    <meta property="og:description" content="Chamber of Commerce Join Page">
-    <meta property="og:image" content="images/passport picture 1b.jpg">
+    <meta property="og:description" content="Chamber of Commerce Join Page for local businesses in Timbuktu">
+    <meta property="og:image" content="https://github.com/jkagubare20/wdd231/chamber/images/passport_picture_1b.jpg">
     <meta property="og:url" content="https://github.com/jkagubare20/wdd231.git">
     <title>Chamber of Commerce Join Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/join-large.css">
@@ -31,7 +34,7 @@
     </header>
     <main>
         <div class="form-section">
-            <h1>Membership Application Form</h1>
+            <h2>Membership Application Form</h2>
             <form action="thankyou.html" method="GET" id="application-form">
                 <label for="firstname">First Name<code>*</code>:</label>
                 <input type="text" name="fname" title="fname" autocomplete="given-name" id="firstname" required>
@@ -40,10 +43,10 @@
                 <input type="text" name="lname" title="lname" autocomplete="family-name" id="lastname" required>
 
                 <label for="organizational-title">Organizational Title:</label>
-                <input type="text" id="organizational-title" name="organizational-title" title="organizational-title" autocomplete="organization-title">
+                <input type="text" id="organizational-title" name="organizational-title" title="organizational-title" autocomplete="organization-title" pattern="title">
 
                 <label for="email">Email Address<code>*</code>:</label>
-                <input type="email" id="email" name="email" title="email" autocomplete="email" required>
+                <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="name@example.com" required>
 
                 <label for="telephone">Phone Number<code>*</code>:</label>
                 <input type="tel" name="phone" title="phone" autocomplete="tel" id="telephone" required>
@@ -67,7 +70,7 @@
             </form>
         </div>
         <div class="membership-section">
-            <h1>Membership Levels</h1>
+            <h2>Membership Levels</h2>
             <div class="membership-cards-container">
                 <div class="membership-card">
                     <p>Non-Profit Membership Level</p>
@@ -132,3 +135,4 @@
         <p><span id="lastModified">Last Modified:</span></p>
     </footer>
 </body>
+</html>
